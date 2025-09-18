@@ -1,12 +1,20 @@
-# basic-statistics-workshop
+# CCPBioSim Basic Statistics Workshop
 
-This workshop illustrates how basic statistical concepts can be applied to the analysis of biomolecular simlation data. Using as an example some of the data from [Shaw et al.'s millisecond MD simulation of BPTI](http://science.sciencemag.org/content/330/6002/341.full), we investigate a series of increasingly rigorous statistical approaches to answering a simple question: what is the average distance between the N- and C-terminal amino acids in the simulation?
+[![build](https://github.com/ccpbiosim/basic-statistics-workshop/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/ccpbiosim/basic-statistics-workshop/actions/workflows/build.yaml)
 
-## Requirements
-A basic knowledge of Python and MD simulation methods.
+## Docker
 
-## Training material
-A Jupyter notebook and associated data files.
+This container is derived from the CCPBioSim JupyterHub image. This container
+adds the necessary software packages and notebook content to form a deployable
+course container. The source content for this course can be found at
+https://github.com/CCPBioSim/basic-statistics-workshop
+
+## How to Use
+
+In our containers we are using the JupyterHub default port 8888, so you should
+forward this port when deploying locally::
+
+    docker run -p 8888:8888 ghcr.io/jimboid/biosim-basic-statistics-workshop:latest
 
 ## Contact
 Please direct all enquiries and comments to [Charlie Laughton](mailto:charles.laughton@nottingham.ac.uk)
