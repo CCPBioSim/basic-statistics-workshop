@@ -16,7 +16,7 @@ RUN conda install matplotlib numpy ipywidgets -y
 
 # Get workshop files and move them to jovyan directory.
 COPY --chown=1000:100 . .
-RUN rm -r AUTHORS LICENSE README.md docker .git .github
+RUN rm -rf AUTHORS LICENSE README.md docker .git .github
 
 # Copy lab workspace
 COPY --chown=1000:100 docker/default-37a8.jupyterlab-workspace /home/jovyan/.jupyter/lab/workspaces/default-37a8.jupyterlab-workspace
