@@ -12,7 +12,7 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN conda install matplotlib numpy ipywidgets -y
+RUN mamba install matplotlib numpy ipywidgets -y
 
 # Get workshop files and move them to jovyan directory.
 COPY --chown=1000:100 . .
