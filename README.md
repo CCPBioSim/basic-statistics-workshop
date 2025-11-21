@@ -14,7 +14,7 @@ https://github.com/CCPBioSim/basic-statistics-workshop
 In our containers we are using the JupyterHub default port 8888, so you should
 forward this port when deploying locally::
 
-    docker run -p 8888:8888 ghcr.io/jimboid/biosim-basic-statistics-workshop:latest
+    docker run -p 8888:8888 ghcr.io/ccpbiosim/basic-statistics-workshop:latest
 
 ## Contact
 Please direct all enquiries and comments to [Charlie Laughton](mailto:charles.laughton@nottingham.ac.uk)
