@@ -9,7 +9,10 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN mamba install matplotlib numpy ipywidgets -y
+RUN conda install -y -c conda-forge \
+    conda-forge::matplotlib=3.11.1 \
+    conda-forge::numpy=2.5.3 \
+    conda-forge::ipywidgets=8.1.9
 
 # Get workshop files and move them to jovyan directory.
 COPY --chown=1000:100 . .
